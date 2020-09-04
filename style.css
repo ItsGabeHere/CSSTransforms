@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-content: space-between;
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 3em;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+  width: 400px;
+  text-align: center;
+  -moz-box-shadow: 4px 4px 5px #828282;
+  -ms-box-shadow: 4px 4px 5px #888;
+  -webkit-box-shadow: 4px 4px 5px #888;
+  box-shadow: 4px 4px 5px #888;
+  margin-top: 10px;
+}
+
+img {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  transition: all 1s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+img:active {
+  position: absolute;
+  top: 20em;
+  z-index: 1;
+  transition-duration: 0.2s;
+  transform: scale(1.4) rotate(1turn);
+}
+
+@media screen and (max-width: 1000px) {
+  img:active {
+    transform: scale(1.1);
+  }
+}
